@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:maxLines="1"
+        android:textColor="@color/textColor"
+        android:ellipsize="end"
+        android:id="@+id/request_group_name"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/textColor"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:textSize="10dp"
+        android:id="@+id/request_group_content"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="@string/accept"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/group_accpet_button"
+            android:background="@drawable/mybutton"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="@string/refuse"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/group_refuse_button"
+            android:src="@drawable/mybutton"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mybutton"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+</LinearLayout>

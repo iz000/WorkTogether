@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/not_topic"
+        android:text="Topic"
+        android:textSize="15dp"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:minHeight="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/not_member_count"
+        android:text="Member number"
+        android:textColor="@color/textColor"
+        android:layout_alignBaseline="@+id/not_topic"
+        android:layout_alignParentEnd="true"
+        android:gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/not_topic" />
+
+</RelativeLayout>

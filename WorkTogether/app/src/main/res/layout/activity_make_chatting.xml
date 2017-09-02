@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/chatting_make_mainLayout"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="@string/chatting_topic"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/textColor"
+            android:id="@+id/chatting_topic_input"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chatting_pick_member"
+                android:textColor="@color/textColor"
+                android:textSize="15dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/add"
+                android:id="@+id/chatting_users_add_button"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:onClick="onClick"/>
+        </RelativeLayout>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="5"
+            android:id="@+id/chatting_member_grid_view"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/mybutton"
+            android:text="@string/chatting_make"
+            android:id="@+id/chatting_make_button"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:background="@drawable/mybutton"
+            android:text="@string/cancel"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/chatting_make_cancel_button"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+
+</LinearLayout>

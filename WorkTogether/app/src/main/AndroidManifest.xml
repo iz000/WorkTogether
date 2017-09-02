@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jang.worktogether" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+
+    <application
+        android:name=".basic.WTapplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".basic.SplashActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".basic.LoginActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"/>
+        <activity android:name=".basic.JoinActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"/>
+        <activity android:name=".group.MainActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".group.ModifyProfileActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTop"/>
+        <activity android:name=".group.MakeGroupActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTop"/>
+        <activity android:name=".chatting.MakeChattingActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTop"/>
+        <activity android:name=".group.SelectFriendsActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".chatting.SelectUsersActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".chatting.ChattingListActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".chatting.ChattingRoomActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".basic.UserProfileActivity"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"/>
+        <activity android:name=".fileandimage.FileListActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".fileandimage.ImageListActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".fileandimage.ImageViewActivity"
+            android:launchMode="singleTop"
+            android:hardwareAccelerated="false"/>
+
+        <service android:name=".chatting.SocketService"/>
+
+        <!--페이스북-->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+    </application>
+
+
+</manifest>
