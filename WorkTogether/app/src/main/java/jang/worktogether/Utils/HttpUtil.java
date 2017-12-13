@@ -34,7 +34,7 @@ public class HttpUtil {
     private SharedPreferences.Editor editor;
     private boolean saveCookie = false;
     private boolean useSession = false;
-    private final String fixedUrl = "http://45.32.109.86/GroupWork/";
+    private final String fixedUrl = "";
 
     public HttpUtil(Context context){
         postData = new HashMap<>();
